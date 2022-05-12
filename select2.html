@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>select2</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"/>
+</head>
+<body>
+<select id="select2box" style="width: 200px" multiple=""> 
+	<option>Test</option>
+	<option>Test2</option>
+	<option>Test2</option>
+</select>
+</body>
+<script type="text/javascript">
+	$("#select2box").select2(); //for live search
+
+	//$("#select2box").select2({ //for multiple select like tags
+	//	multiple:true // also work add multiple attrib in select tag
+	//});
+
+	//var somevariable = ["hello","hello2","hello3"]; // variable
+	//$("#select2box").select2({ //add option via variable
+	//	data:somevariable
+	//});
+
+	// $("#select2box").select2({ //for placeholder
+	// 	placeholder: "Please select a country" //it is work for multiple select
+	// });
+</script>
+</html>
